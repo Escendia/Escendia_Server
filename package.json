@@ -1,0 +1,34 @@
+{
+  "name": "escendia_winestock_server",
+  "version": "1.0.0",
+  "description": "Server for Escendia Winestock",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm install nodemon && npm install && nodemon app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "build": "npm run build --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "prod": "concurrently \"npm run server\" \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyraja/Escendia_Winestock_Server.git"
+  },
+  "keywords": [
+    "Escendia",
+    "Winestock",
+    "Server"
+  ],
+  "author": "Kyraja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyraja/Escendia_Winestock_Server/issues"
+  },
+  "homepage": "https://github.com/Kyraja/Escendia_Winestock_Server#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^19.3.0",
+    "nodemon": "^2.0.20"
+  }
+}
