@@ -8,8 +8,7 @@ const DataBaseObjectSchema = new mongoose.Schema({
   },
   createdDate: {
     type: Date,
-    default: new Date(),
-    required: [true, "api.error.date.createdDate"],
+    default: new Date()
   },
   status: {
     type: String,
